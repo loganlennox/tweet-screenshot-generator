@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Twitter Screenshot Generator</title>
+</head>
+<body>
+  <style type="text/css">
+    body {
+      background-color: white;
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #ffffff;
+    }
+
+    .clearfix:after {
+      content: " ";
+      visibility: hidden;
+      display: block;
+      height: 0;
+      clear: both;
+    }
+
+    .body {
+      background-color: #1B2836;
+      padding: 40px;
+      width: 640px;
+    }
+
+    .user-info {
+      float: left;
+      width: 420px;
+    }
+
+    .user-info > img {
+      width: 48px;
+      height: 48px;
+      border-radius: 100%;
+      float: left;
+      margin-right: 10px;
+    }
+
+    .user-info > div > * {
+      margin: 0;
+    }
+
+    .user-info > div > h1 {
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .user-info > div > p {
+      font-size: 14px;
+      color: #8899a6;
+    }
+
+    .follow {
+      float: right;
+      height: 48px;
+    }
+
+    .follow > h2 {
+      margin: 0;
+      background-color: #ABB8C2;
+      width: 105px;
+      height: 35px;
+      font-size: 14px;
+      border-radius: 100px;
+      text-align: center;
+      line-height: 35px;
+      margin-top: 6.5px;
+    }
+
+    .tweet > p {
+      font-size: 27px;
+      line-height: 32px;
+      letter-spacing: .01em;
+      margin: 15px 0;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+
+    .time > p {
+      font-size: 14px;
+      color: #8899a6;
+    }
+
+    .stats > img {
+      margin-top: 5px;
+    }
+  </style>
+
+  <div class="body">
+
+    <div class="header clearfix">
+      <div class="user-info">
+        <img src="pfp.png">
+        <div>
+          <h1>{{name}}</h1>
+          <p>@{{username}}</p>
+        </div>
+      </div>
+      <div class="follow">
+        <h2>Following</h2>
+      </div>
+    </div>
+
+    <div class="tweet">
+      <p>{{body}}</p>
+    </div>
+
+    <div class="time">
+      <p>4:51 PM - 24 May 2018</p>
+    </div>
+
+    <div class="stats">
+      <img src="icons_dark.png">
+    </div>
+  </div>
+</body>
+</html>
